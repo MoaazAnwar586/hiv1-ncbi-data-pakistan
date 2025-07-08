@@ -4,7 +4,7 @@ import time
 import smtplib
 from email.message import EmailMessage
 
-Entrez.email = "moaazanwar586@gmail.com"
+Entrez.email = "your_personal_email@gmail.com"
 
 # Use your improved query
 query = '(("Human immunodeficiency virus 1"[Organism] OR hiv 1[All Fields]) AND pol gene[All Fields] AND pakistan[All Fields]) AND (is_nuccore[filter] AND ("900"[SLEN] : "3000"[SLEN]) AND ("2015/01/01"[PDAT] : "3000/12/31"[PDAT]))'
@@ -56,9 +56,9 @@ df.to_excel("hiv1_pol_metadata.xlsx", index=False)
 print("Data retrieval complete.")
 
 # ----------- Email the files -----------
-sender_email = "moaazanwar586@gmail.com"
-receiver_email = "moaazanwar586@gmail.com"
-app_password = "qzda vkbo ordo hnwi"  # <-- Replace with your Gmail App Password
+sender_email = "your_personal_email@gmail.com"
+receiver_email = "your_personal_email@gmail.com"
+app_password = "xxxxxxxxxxxxxxxxxxxx"  # <-- Replace with your Gmail App Password
 
 subject = "HIV-1 pol FASTA and Metadata Files"
 body = "Attached are the FASTA and metadata files you requested."
